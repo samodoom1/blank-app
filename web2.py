@@ -30,7 +30,11 @@ from oauth2client.service_account import ServiceAccountCredentials
 def append_to_google_sheet(name, email, scores, total_score):
     # Set up credentials
     scope = ["https://spreadsheets.google.com/feeds", "https://www.googleapis.com/auth/drive"]
-    creds = ServiceAccountCredentials.from_json_keyfile_name("client_secret.json", scope)
+    import json
+    from oauth2client.service_account import ServiceAccountCredentials
+
+    service_account_info = st.secrets["google_service_account"]
+    creds = ServiceAccountCredentials.from_json_keyfile_dict(service_account_info, scope)
     client = gspread.authorize(creds)
 
     # Open the Google Sheet (by name or URL)
