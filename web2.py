@@ -180,21 +180,21 @@ for category, questions in categories.items():
     total_score += score
 
 # Show results
-st.markdown("---")
-st.subheader("Your Results")
-for category, score in scores.items():
-    st.write(f"**{category} Score:** {score}")
-st.write(f"**Total Score:** {total_score}")
+# st.markdown("---")
+# st.subheader("Your Results")
+#for category, score in scores.items():
+#    st.write(f"**{category} Score:** {score}")
+#st.write(f"**Total Score:** {total_score}")
 
 # Interpret score live with colour
-if total_score <= 3:
-    st.success("Excellent energy management skills.")
-elif total_score <= 6:
-    st.info("Reasonable energy management skills.")
-elif total_score <= 10:
-    st.warning("Significant energy management deficits.")
-else:
-    st.error("A full-fledged energy management crisis.")
+#if total_score <= 3:
+#    st.success("Excellent energy management skills.")
+#elif total_score <= 6:
+#    st.info("Reasonable energy management skills.")
+#elif total_score <= 10:
+#    st.warning("Significant energy management deficits.")
+#else:
+#    st.error("A full-fledged energy management crisis.")
 
 # Form inputs
 name = st.text_input("Your Name")
