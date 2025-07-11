@@ -196,7 +196,7 @@ for category, questions in categories.items():
 #else:
 #    st.error("A full-fledged energy management crisis.")
 
-st.markdown("### Enter your name and email address to receive your results via email.")
+st.markdown("### Enter your name and email address to receive your results via email. (Make sure to check your spam)")
 # Form inputs
 name = st.text_input("Your Name")
 email = st.text_input("Your Email Address")
