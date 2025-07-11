@@ -223,10 +223,11 @@ Here’s how your scores break down by category:
 {score_breakdown}
 Note: The higher the score, the more that area is calling for your attention and intention.
 
-We hope this gives you some helpful insight into your current energy levels.
+We hope this gives you some helpful insight into your current energy levels. If you would like to improve your scores, reply to this email, and we can discuss your needs
 
 Warm regards,
-The Energy Audit Team
+Lawrence
+CEO Raw Energy | CEO Finding Equilibrium | CEO Wellbeing @ Work APAC
 """
 
         send_email(email, "Your Energy Audit Score", email_body)
