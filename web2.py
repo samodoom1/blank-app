@@ -227,7 +227,7 @@ We hope this gives you some helpful insight into your current energy levels. If 
 
 Warm regards,
 Lawrence
-CEO Raw Energy | CEO Finding Equilibrium | CEO Wellbeing @ Work APAC
+CEO Raw Energy | Finding Equilibrium | Wellbeing @ Work APAC
 """
 
         send_email(email, "Your Energy Audit Score", email_body)
