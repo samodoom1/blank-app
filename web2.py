@@ -82,13 +82,13 @@ email_password = st.secrets["email"]["password"]
 # ----- Functions -----
 def interpret_score(score):
     if score <= 3:
-        return "Excellent energy management skills."
+        return "you have excellent energy management skills."
     elif score <= 6:
-        return "Reasonable energy management skills."
+        return "you have reasonable energy management skills."
     elif score <= 10:
-        return "Significant energy management deficits."
+        return "you have significant energy management deficits."
     else:
-        return "A full-fledged energy management crisis."
+        return "you're having a full-fledged energy management crisis."
 
 def send_email(to_email, subject, body):
     msg = EmailMessage()
@@ -217,17 +217,17 @@ if st.button("Submit"):
 Thank you for completing the Energy Audit.
 
 Your total score is: {total_score}
-This means: {score_meaning}
+This suggesys that: {score_meaning}
 
 Here’s how your scores break down by category:
 {score_breakdown}
-Note: The higher the score, the more that area is calling for your attention and intention.
+As a guide, the higher the score, the more that area is calling for your attention and intention.
 
-We hope this gives you some helpful insight into your current energy levels. If you would like to improve your scores, reply to this email, and we can discuss your needs
+I hope this gives you a useful snapshot of where your energy is at right now. If you’d like to explore ways to improve any of these areas, just reply to this email and we can chat.
 
-Warm regards,
+Warmly,
 Lawrence
-CEO Raw Energy | Finding Equilibrium | Wellbeing @ Work APAC
+CEO, Raw Energy | Finding Equilibrium | Wellbeing at Work APAC
 """
 
         send_email(email, "Your Energy Audit Score", email_body)
