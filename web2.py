@@ -217,7 +217,7 @@ if st.button("Submit"):
 Thank you for completing the Energy Audit.
 
 Your total score is: {total_score}
-This suggesys that: {score_meaning}
+This suggests that {score_meaning}
 
 Here’s how your scores break down by category:
 {score_breakdown}
